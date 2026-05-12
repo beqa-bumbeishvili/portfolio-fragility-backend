@@ -1,0 +1,24 @@
+{
+  "name": "portfolio-fragility-backend",
+  "version": "1.0.0",
+  "description": "Simple Express API for Portfolio Fragility",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js"
+  },
+  "keywords": [
+    "express",
+    "api",
+    "cors"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}

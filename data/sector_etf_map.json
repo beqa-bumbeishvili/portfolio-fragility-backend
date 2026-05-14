@@ -1,0 +1,14 @@
+{
+  "Basic Materials": "XLB",
+  "Communication Services": "IYZ",
+  "Consumer Cyclical": "XLY",
+  "Consumer Defensive": "XLP",
+  "Energy": "XLE",
+  "Financial Services": "XLF",
+  "Healthcare": "XLV",
+  "Industrials": "XLI",
+  "Real Estate": "IYR",
+  "Technology": "XLK",
+  "Utilities": "XLU",
+  "Fallback": "SPY"
+}

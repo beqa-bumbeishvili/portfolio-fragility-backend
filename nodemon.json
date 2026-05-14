@@ -1,0 +1,12 @@
+{
+  "watch": [
+    "src",
+    ".env",
+    ".env.local"
+  ],
+  "ext": "js,json",
+  "ignore": [
+    "data/**",
+    "node_modules/**"
+  ]
+}

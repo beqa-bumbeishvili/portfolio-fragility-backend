@@ -1,0 +1,272 @@
+{
+    "upro": {
+        "bucket": "broad_etf",
+        "leverage": 3,
+        "direction": "long",
+        "underlyingSymbol": "SPY"
+    },
+    "spxu": {
+        "bucket": "broad_etf",
+        "leverage": 3,
+        "direction": "inverse",
+        "underlyingSymbol": "SPY"
+    },
+    "spxl": {
+        "bucket": "broad_etf",
+        "leverage": 3,
+        "direction": "long",
+        "underlyingSymbol": "SPY"
+    },
+    "spxs": {
+        "bucket": "broad_etf",
+        "leverage": 3,
+        "direction": "inverse",
+        "underlyingSymbol": "SPY"
+    },
+    "sso": {
+        "bucket": "broad_etf",
+        "leverage": 2,
+        "direction": "long",
+        "underlyingSymbol": "SPY"
+    },
+    "sds": {
+        "bucket": "broad_etf",
+        "leverage": 2,
+        "direction": "inverse",
+        "underlyingSymbol": "SPY"
+    },
+    "ddm": {
+        "bucket": "broad_etf",
+        "leverage": 2,
+        "direction": "long",
+        "underlyingSymbol": "DIA"
+    },
+    "dxd": {
+        "bucket": "broad_etf",
+        "leverage": 2,
+        "direction": "inverse",
+        "underlyingSymbol": "DIA"
+    },
+    "udow": {
+        "bucket": "broad_etf",
+        "leverage": 3,
+        "direction": "long",
+        "underlyingSymbol": "DIA"
+    },
+    "sdow": {
+        "bucket": "broad_etf",
+        "leverage": 3,
+        "direction": "inverse",
+        "underlyingSymbol": "DIA"
+    },
+    "tna": {
+        "bucket": "broad_etf",
+        "leverage": 3,
+        "direction": "long",
+        "underlyingSymbol": "IWM"
+    },
+    "tza": {
+        "bucket": "broad_etf",
+        "leverage": 3,
+        "direction": "inverse",
+        "underlyingSymbol": "IWM"
+    },
+    "urty": {
+        "bucket": "broad_etf",
+        "leverage": 3,
+        "direction": "long",
+        "underlyingSymbol": "IWM"
+    },
+    "srty": {
+        "bucket": "broad_etf",
+        "leverage": 3,
+        "direction": "inverse",
+        "underlyingSymbol": "IWM"
+    },
+    "tqqq": {
+        "bucket": "tech",
+        "leverage": 3,
+        "direction": "long",
+        "underlyingSymbol": "QQQ"
+    },
+    "sqqq": {
+        "bucket": "tech",
+        "leverage": 3,
+        "direction": "inverse",
+        "underlyingSymbol": "QQQ"
+    },
+    "soxl": {
+        "bucket": "tech",
+        "leverage": 3,
+        "direction": "long",
+        "underlyingSymbol": "SOXX"
+    },
+    "soxs": {
+        "bucket": "tech",
+        "leverage": 3,
+        "direction": "inverse",
+        "underlyingSymbol": "SOXX"
+    },
+    "tecl": {
+        "bucket": "tech",
+        "leverage": 3,
+        "direction": "long",
+        "underlyingSymbol": "XLK"
+    },
+    "tecs": {
+        "bucket": "tech",
+        "leverage": 3,
+        "direction": "inverse",
+        "underlyingSymbol": "XLK"
+    },
+    "qld": {
+        "bucket": "tech",
+        "leverage": 2,
+        "direction": "long",
+        "underlyingSymbol": "QQQ"
+    },
+    "qid": {
+        "bucket": "tech",
+        "leverage": 2,
+        "direction": "inverse",
+        "underlyingSymbol": "QQQ"
+    },
+    "rom": {
+        "bucket": "tech",
+        "leverage": 2,
+        "direction": "long",
+        "underlyingSymbol": "XLK"
+    },
+    "rew": {
+        "bucket": "tech",
+        "leverage": 2,
+        "direction": "inverse",
+        "underlyingSymbol": "XLK"
+    },
+    "usd": {
+        "bucket": "tech",
+        "leverage": 2,
+        "direction": "long",
+        "underlyingSymbol": "SOXX"
+    },
+    "ssg": {
+        "bucket": "tech",
+        "leverage": 2,
+        "direction": "inverse",
+        "underlyingSymbol": "SOXX"
+    },
+    "fas": {
+        "bucket": "financials",
+        "leverage": 3,
+        "direction": "long",
+        "underlyingSymbol": "XLF"
+    },
+    "faz": {
+        "bucket": "financials",
+        "leverage": 3,
+        "direction": "inverse",
+        "underlyingSymbol": "XLF"
+    },
+    "dpst": {
+        "bucket": "financials",
+        "leverage": 3,
+        "direction": "long",
+        "underlyingSymbol": "KRE"
+    },
+    "uyg": {
+        "bucket": "financials",
+        "leverage": 2,
+        "direction": "long",
+        "underlyingSymbol": "XLF"
+    },
+    "skf": {
+        "bucket": "financials",
+        "leverage": 2,
+        "direction": "inverse",
+        "underlyingSymbol": "XLF"
+    },
+    "wdrw": {
+        "bucket": "financials",
+        "leverage": 3,
+        "direction": "inverse",
+        "underlyingSymbol": "KRE"
+    },
+    "labu": {
+        "bucket": "healthcare",
+        "leverage": 3,
+        "direction": "long",
+        "underlyingSymbol": "XBI"
+    },
+    "labd": {
+        "bucket": "healthcare",
+        "leverage": 3,
+        "direction": "inverse",
+        "underlyingSymbol": "XBI"
+    },
+    "rxl": {
+        "bucket": "healthcare",
+        "leverage": 2,
+        "direction": "long",
+        "underlyingSymbol": "XLV"
+    },
+    "rxd": {
+        "bucket": "healthcare",
+        "leverage": 2,
+        "direction": "inverse",
+        "underlyingSymbol": "XLV"
+    },
+    "cure": {
+        "bucket": "healthcare",
+        "leverage": 3,
+        "direction": "long",
+        "underlyingSymbol": "XLV"
+    },
+    "erx": {
+        "bucket": "energy",
+        "leverage": 2,
+        "direction": "long",
+        "underlyingSymbol": "XLE"
+    },
+    "ery": {
+        "bucket": "energy",
+        "leverage": 2,
+        "direction": "inverse",
+        "underlyingSymbol": "XLE"
+    },
+    "gush": {
+        "bucket": "energy",
+        "leverage": 2,
+        "direction": "long",
+        "underlyingSymbol": "XOP"
+    },
+    "drip": {
+        "bucket": "energy",
+        "leverage": 2,
+        "direction": "inverse",
+        "underlyingSymbol": "XOP"
+    },
+    "nugt": {
+        "bucket": "basic_materials",
+        "leverage": 3,
+        "direction": "long",
+        "underlyingSymbol": "GDX"
+    },
+    "dust": {
+        "bucket": "basic_materials",
+        "leverage": 3,
+        "direction": "inverse",
+        "underlyingSymbol": "GDX"
+    },
+    "tmf": {
+        "bucket": "bond_etf",
+        "leverage": 3,
+        "direction": "long",
+        "underlyingSymbol": "TLT"
+    },
+    "tmv": {
+        "bucket": "bond_etf",
+        "leverage": 3,
+        "direction": "inverse",
+        "underlyingSymbol": "TLT"
+    }
+}

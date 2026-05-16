@@ -7,6 +7,28 @@ async function analyzeUsersPortfolio(req, res, next) {
         // nearest trading day after crisis started
         const nearestTradingDay = mainService.getNearestTradingDay(crisis?.startDate);
 
+        if (isHypotheticalCrisis(crisis)) {
+            const currentAdjustedClosePrices = await mainService.fetchCurrentAdjustedClosePrices(
+                portfolio
+            );
+            const companySectorResolutions = await mainService.fetchCompanySectorResolutions({
+                portfolio,
+                historicalAdjustedCloseSeries: {},
+                startDate: nearestTradingDay,
+                endDate: crisis?.endDate
+            });
+            const result = await mainService.analyzeHypotheticalUsersPortfolio({
+                portfolio,
+                crisis,
+                nearestTradingDay,
+                currentAdjustedClosePrices,
+                companySectorResolutions
+            });
+
+            res.status(200).json(result);
+            return;
+        }
+
         // current share prices of each portfolio item
         const currentAdjustedClosePrices = await mainService.fetchCurrentAdjustedClosePrices(
             portfolio
@@ -59,6 +81,14 @@ async function analyzeUsersPortfolio(req, res, next) {
     }
 }
 
+function isHypotheticalCrisis(crisis) {
+    return Boolean(
+        crisis &&
+            typeof crisis.group === 'string' &&
+            crisis.group.toLowerCase() === 'hypothetical'
+    );
+}
+
 async function getAiSimpleFix(req, res, next) {
     try {
         const { portfolio, crisis, analysisSummary } = req.body || {};
@@ -75,7 +105,28 @@ async function getAiSimpleFix(req, res, next) {
     }
 }
 
+async function getRealtimePrice(req, res, next) {
+    try {
+        const symbol = req.body?.symbol;
+
+        if (typeof symbol !== 'string' || !symbol.trim()) {
+            res.status(400).json({
+                ok: false,
+                error: 'A symbol is required.'
+            });
+            return;
+        }
+
+        const result = await mainService.getRealtimePrice(symbol);
+
+        res.status(200).json(result);
+    } catch (error) {
+        next(error);
+    }
+}
+
 module.exports = {
     analyzeUsersPortfolio,
-    getAiSimpleFix
+    getAiSimpleFix,
+    getRealtimePrice
 };
